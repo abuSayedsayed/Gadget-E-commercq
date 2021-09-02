@@ -1,0 +1,140 @@
+@media (max-width: 1400px) {
+}
+@media (max-width: 1200px) {
+}
+@media (max-width: 992px) {
+}
+@media (max-width: 768px) {
+	.carousel-item {
+		padding: 0;
+	}
+
+	.carousel-item > .container {
+		flex-direction: column;
+	}
+	.hero-left {
+		text-align: center;
+		padding: 3rem 0rem;
+	}
+	.hero-right {
+		text-align: center;
+		padding-top: 3rem;
+		width: 70%;
+	}
+	.hero-right > img {
+		margin: auto;
+		width: 75%;
+	}
+	.collection-container > .container {
+		flex-direction: column;
+	}
+	.collection-box {
+		width: 70%;
+	}
+	.collection-box:last-child {
+		margin-top: 4rem;
+	}
+	.product-display-container {
+		grid-template-columns: repeat(3, 30%);
+		height: 650vh;
+	}
+	.add-to-cart-btn {
+		padding: 1.3rem 4rem;
+	}
+	.newsletter-container {
+		flex-direction: column;
+	}
+	.newsletter-right {
+		margin-top: 3rem;
+	}
+}
+@media (max-width: 576px) {
+	.hamburger {
+		display: block;
+		font-size: 2rem;
+		cursor: pointer;
+	}
+	#navbar {
+		flex: 0;
+		position: absolute;
+		top: 0;
+		left: -100%;
+		transition: all 0.3s ease-out 0.2s;
+	}
+	#navbar > .navmenu {
+		flex-direction: column;
+		height: 100vh;
+		width: 0vw;
+		background-color: var(--white);
+		border-top: 6.7rem solid var(--red);
+		border-bottom: 6.7rem solid var(--red);
+		transition: all 0.3s ease-in-out 0.2s;
+	}
+	.navmenu > li > a {
+		font-weight: bold;
+	}
+
+	.glide__arrow--left {
+		display: none;
+	}
+	.glide__arrow--right {
+		display: none;
+	}
+	.icons {
+		flex: 1;
+		text-align: center;
+	}
+	.icons > a {
+		padding: 0.3rem 0.5rem;
+	}
+	.icons > a > i {
+		font-size: 0.9rem;
+	}
+	.collection-box {
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		width: 98%;
+	}
+	.img-container {
+		width: 35%;
+		text-align: center;
+		padding-left: 0rem;
+		padding-bottom: 1.8rem;
+	}
+	.img-container > img {
+		width: 100%;
+		margin: auto;
+	}
+	.product-display-container {
+		grid-template-columns: repeat(1, 98%);
+		grid-gap: 1%;
+		height: 2200vh;
+	}
+	.options {
+		display: flex;
+		flex-direction: column;
+		justify-content: flex-start;
+	}
+	.options > span {
+		padding: 0.8rem;
+	}
+
+	.feature-container {
+		flex-direction: column;
+	}
+	#footer > .container {
+		flex-direction: column;
+		align-items: flex-start;
+	}
+	.footer-box{
+		padding: 3rem 0rem;
+	}
+	.newsletter-right > input {
+		padding: 1rem 4rem;
+	}
+	.subscribe-btn {
+		display: block;
+		margin: 1rem auto;
+	}
+}

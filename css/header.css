@@ -1,0 +1,86 @@
+#header {
+	background-color: var(--white);
+	position: sticky;
+	top: 0;
+	left: 0;
+	z-index: 100000;
+}
+#header > .container {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.logo {
+	font-size: 2.5rem;
+	font-weight: 600;
+	padding: 2rem 0rem;
+}
+.logo > a {
+	color: var(--black);
+}
+.logo > a > span {
+	color: var(--red);
+}
+#navbar {
+	flex-grow: 1;
+	z-index: 3333;
+}
+.navmenu {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.navmenu > li {
+	padding: 0.5rem 1rem;
+}
+.navmenu > li > a {
+	padding: 0.5rem 1rem;
+	font-size: 1.4rem;
+	color: var(--black);
+	font-weight: 500;
+	transition: all 0.2s ease-in-out 0.1s;
+}
+
+.navmenu > li > a:hover {
+	color: var(--red);
+}
+.icons > a {
+	padding: 0.6rem 0.8rem;
+	border: 0.1rem solid var(--black);
+	color: var(--black);
+	border-radius: 0.5rem;
+	transition: all 0.2s ease-in-out 0.1s;
+}
+.icons > a > i {
+	font-size: 1.2rem;
+}
+.icons > a:hover {
+	color: var(--red);
+	border-color: var(--red);
+	box-shadow: 0rem 0rem 0.2rem 0rem var(--red);
+}
+.icons > a:nth-child(2) {
+	margin: 0rem 0.5rem;
+}
+.icons > a:last-child {
+	position: relative;
+}
+.icons > a:last-child > span {
+	position: absolute;
+	top: -15%;
+	right: -10%;
+	text-align: center;
+	vertical-align: middle;
+	display: grid;
+	place-items: center;
+	width: 60%;
+	height: 60%;
+	background-color: var(--red);
+	color: var(--white);
+	font-weight: bold;
+	border-radius: 50%;
+	border: 0.1rem solid var(--black);
+}
+.hamburger{
+	display: none;
+}
